@@ -1,0 +1,11 @@
+/* VARIABLES DEL PROYECTO */
+:root{
+    /* FUENTES */
+    --titulos: 'Rowdies', cursive;
+    --textos: 'Ubuntu', sans-serif;
+
+    /* COLORES */
+    --colorClaro: #fff;
+    --colorOscuro: #000;
+    --colorPrincipal: #2AFF00;
+}
