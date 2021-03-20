@@ -129,14 +129,15 @@
 
 .descripcion-empresa__imagen{
     width: 30%;
-    border: 2px solid var(--colorOscuro);
-    border-radius: 25px;
     overflow: hidden;
     box-sizing: border-box;
 }
 
 .descripcion-empresa__imagen img{
     width: 100%;
+    border: 2px solid var(--colorOscuro);
+    border-radius: 25px;
+    box-sizing: border-box;
 }
 
 .descripcion-empresa__texto{
@@ -387,5 +388,26 @@
 
     .menu-responsive{
         display: block;
+    }
+}
+
+@media only screen and (min-width: 319px) and (orientation: landscape){
+    .contenido-seccion{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .descripcion-empresa__imagen{
+        width: 40%;
+        height: auto;
+        margin: 0;
+    }
+
+    .descripcion-empresa__texto{
+        width: 50%;
+    }
+
+    .tarjeta-productos{
+        width: 45%;
     }
 }

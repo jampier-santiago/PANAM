@@ -1,3 +1,4 @@
+console.log(window.screen.orientation)
 // ENVIAR EL SCROLL DEL INDEX HASTA LA SECCIÓN DE PRODUCTOS
 let enlaceP = document.getElementsByClassName('enlace-productos')
 
