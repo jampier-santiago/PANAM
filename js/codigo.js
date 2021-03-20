@@ -1,8 +1,10 @@
 // ENVIAR EL SCROLL DEL INDEX HASTA LA SECCIÓN DE PRODUCTOS
-let enlace = document.getElementById('enlace')
+let enlace = document.getElementsByClassName('enlace')
 
 window.addEventListener('scroll', () => console.log(window.scrollY))
-enlace.addEventListener('click', moverScroll)
+for(let i = 0; i < enlace.length; i++){
+    enlace[i].addEventListener('click', moverScroll)
+}
 
 function moverScroll (){
     if((screen.width >= 320) && (screen.width <= 374)){
