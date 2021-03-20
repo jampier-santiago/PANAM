@@ -53,7 +53,7 @@
     align-items: center;
 }
 
-.menu__enlaces a{
+.menu__enlaces a, .menu__enlaces span{
     color: var(--colorOscuro);
     letter-spacing: 2px;
     font-family: var(--textos);
@@ -64,9 +64,10 @@
     background-color: rgba(0, 0, 0, .2);
 }
 
-.menu__enlaces li:hover a{
+.menu__enlaces li:hover a, .menu__enlaces li:hover span{
     color: var(--colorClaro);
     font-style: italic;
+    cursor: pointer;
 }
 
 /* HEADER */
