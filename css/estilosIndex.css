@@ -273,6 +273,8 @@
     height: 50%;
     display: none;
     position: fixed;
+    transform: translateX(-100%);
+    transition-duration: .5s;
     border-top: 2px solid var(--colorOscuro);
     background-color: rgba(42, 255, 0, .9);
     box-sizing: border-box;
@@ -315,4 +317,75 @@
 .menu-responsive li:hover a, .menu-responsive li:hover span{
     font-style: italic;
     color: var(--colorClaro);
+}
+
+/* DISEÑO RESPONSIVE */
+@media only screen and (min-width: 319px){
+    .menu__enlaces{
+        width: 20%;
+    }
+
+    .menu__enlaces li{
+        display: none;
+    }
+
+    .menu__enlaces li:last-of-type{
+        width: 100%;
+        display: flex;
+    }
+
+    .menu__enlaces li:last-of-type span{
+        font-size: 20px;
+    }
+
+    .menu__nombre{
+        width: 50%;
+    }
+
+    .header img{
+        width: 60%;
+    }
+
+    .descripcion-empresa{
+        padding: 10px;
+    }
+
+    .titulo-seccion{
+        margin-bottom: 10px;
+    }
+
+    .titulo-seccion h2{
+        width: 80%;
+    }
+
+    .contenido-seccion{
+        flex-direction: column;
+    }
+
+    .descripcion-empresa__imagen{
+        width: 70%;
+        margin: auto;
+    }
+
+    .descripcion-empresa__texto{
+        width: 80%;
+        margin: auto;
+        padding: 10px;
+    }
+
+    .descripcion-empresa__texto p{
+        padding: 10px;
+        border-radius: 25px;
+        background-color: rgba(255, 255, 255, .3);
+        line-height: 1.5em;
+    }
+
+    .tarjeta-productos{
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .menu-responsive{
+        display: block;
+    }
 }

@@ -1,16 +1,16 @@
 // ENVIAR EL SCROLL DEL INDEX HASTA LA SECCIÓN DE PRODUCTOS
-let enlace = document.getElementsByClassName('enlace')
+let enlaceP = document.getElementsByClassName('enlace-productos')
 
 window.addEventListener('scroll', () => console.log(window.scrollY))
-for(let i = 0; i < enlace.length; i++){
-    enlace[i].addEventListener('click', moverScroll)
+for(let i = 0; i < enlaceP.length; i++){
+    enlaceP[i].addEventListener('click', moverScroll)
 }
 
 function moverScroll (){
     if((screen.width >= 320) && (screen.width <= 374)){
         window.scrollTo({
             behavior: "smooth",
-            top: 655
+            top: 880
         })
     }else if((screen.width >= 375) && (screen.width <= 424)){
         window.scrollTo({
@@ -50,4 +50,35 @@ function moverScroll (){
             top: 700
         })
     }
+}
+
+// APARECER Y OCULTAR EL MENÚ PARA PANTALLAS MOVILES SEGUN LA NECESDAD DEL USUARIO
+let boton = document.getElementById('botonMenu')
+let menu = document.getElementById('menuSecundario')
+let enlace = document.getElementsByClassName('enlace')
+let menuDesplegado = false
+
+boton.addEventListener('click', () => {
+    if(menuDesplegado){
+        ocultarMenu()
+        menuDesplegado = false
+    }else{
+        mostrarMenu()
+        menuDesplegado = true
+    }
+})
+
+for(let i = 0; i < enlace.length; i++){
+    enlace[i].addEventListener('click', ocultarMenu)
+    menuDesplegado = false
+}
+
+//Funcion para aparecer el menú responsive
+function mostrarMenu(){
+    menu.style.transform = 'translateX(0)'
+}
+
+//Funcion para ocultar el menú responsive
+function ocultarMenu(){
+    menu.style.transform = 'translateX(-100%)'
 }
