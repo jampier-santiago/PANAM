@@ -320,6 +320,32 @@
     color: var(--colorClaro);
 }
 
+/* BOTON PARA LLEGAR AL INICIO DE LA PAGINA */
+.boton-inicio{
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--colorPrincipal);
+    border: 1px solid var(--colorOscuro);
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.boton-inicio span{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.boton-inicio:hover{
+    background-color: var(--colorClaro);
+}
+
 /* DISEÑO RESPONSIVE */
 @media only screen and (min-width: 319px){
     .menu__enlaces{
