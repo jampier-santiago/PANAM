@@ -46,7 +46,7 @@
 }
 
 .menu__enlaces li{
-    width: 20%;
+    width: 25%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -276,5 +276,33 @@
 
     .contacto__enlaces, .contacto__mapa{
         width: 100%;
+    }
+}
+
+@media only screen and (min-width: 991px) {
+    .menu__nombre {
+        width: 20%;
+    }
+
+    .menu__enlaces {
+        width: 50%;
+    }
+
+    .menu__enlaces li {
+        width: 25%;
+        display: flex;
+    }
+
+    .menu__enlaces li:last-of-type {
+        display: none;
+    }
+
+    .contacto {
+        height: auto;
+        flex-direction: row;
+    }
+
+    .contacto__enlaces, .contacto__mapa{
+        width: 50%;
     }
 }
