@@ -246,6 +246,7 @@ body {
     border-top: 2px solid var(--colorOscuro);
     background-color: rgba(42, 255, 0, .9);
     box-sizing: border-box;
+    z-index: 100;
 }
 
 .menu-responsive ul{
