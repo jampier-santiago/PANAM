@@ -1,0 +1,21 @@
+#img1, #img2, #img3, #img4, #img5 {
+    background-position: center;
+    background-size: cover;
+}
+
+#img1 {
+    background-image: url('https://i.pinimg.com/originals/e9/7f/53/e97f53520dbf4be3f4f2e158e3243739.jpg');
+}
+
+#img2 {
+    background-image: url('https://i.pinimg.com/originals/d9/25/72/d9257209fa2a9a0794b90e705f69d2a4.jpg');
+}
+
+#img3 {
+    background-image: url('https://i.pinimg.com/originals/3d/74/8a/3d748aefdb020dc753f96103b7a00e4d.jpg');
+}
+
+#img4 {
+    background-image: url('https://i.pinimg.com/originals/f9/ab/8f/f9ab8f69e6a51ae82ad304e8016f47c9.jpg');
+    background-position: bottom;
+}
